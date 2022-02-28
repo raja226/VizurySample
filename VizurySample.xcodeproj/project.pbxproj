@@ -13,6 +13,9 @@
 		04261469276CED1800C221E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04261467276CED1800C221E8 /* Main.storyboard */; };
 		0426146B276CED1900C221E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0426146A276CED1900C221E8 /* Assets.xcassets */; };
 		0426146E276CED1900C221E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0426146C276CED1900C221E8 /* LaunchScreen.storyboard */; };
+		04261476276CEE7E00C221E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04261475276CEE7E00C221E8 /* Foundation.framework */; };
+		04261478276CEED900C221E8 /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04261477276CEED900C221E8 /* VizuryEventLogger.framework */; };
+		9A0745D8709DED091F78946E /* Pods_VizurySample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0530D3AC33AA3CCD4C6349 /* Pods_VizurySample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,12 @@
 		0426146A276CED1900C221E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0426146D276CED1900C221E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0426146F276CED1900C221E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04261475276CEE7E00C221E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04261477276CEED900C221E8 /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
+		04261479276CEF2000C221E8 /* VizurySample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VizurySample-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E0530D3AC33AA3CCD4C6349 /* Pods_VizurySample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VizurySample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847B499ABD952812B9773984 /* Pods-VizurySample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizurySample.debug.xcconfig"; path = "Target Support Files/Pods-VizurySample/Pods-VizurySample.debug.xcconfig"; sourceTree = "<group>"; };
+		F548A5063274F225A4D5BFFF /* Pods-VizurySample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizurySample.release.xcconfig"; path = "Target Support Files/Pods-VizurySample/Pods-VizurySample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04261478276CEED900C221E8 /* VizuryEventLogger.framework in Frameworks */,
+				9A0745D8709DED091F78946E /* Pods_VizurySample.framework in Frameworks */,
+				04261476276CEE7E00C221E8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,8 @@
 			children = (
 				04261460276CED1800C221E8 /* VizurySample */,
 				0426145F276CED1800C221E8 /* Products */,
+				78E8BFFFFC3D6494DFCD31D7 /* Pods */,
+				77F8B2FA9343B01133680378 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +77,28 @@
 				0426146A276CED1900C221E8 /* Assets.xcassets */,
 				0426146C276CED1900C221E8 /* LaunchScreen.storyboard */,
 				0426146F276CED1900C221E8 /* Info.plist */,
+				04261479276CEF2000C221E8 /* VizurySample-Bridging-Header.h */,
 			);
 			path = VizurySample;
+			sourceTree = "<group>";
+		};
+		77F8B2FA9343B01133680378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04261477276CEED900C221E8 /* VizuryEventLogger.framework */,
+				04261475276CEE7E00C221E8 /* Foundation.framework */,
+				0E0530D3AC33AA3CCD4C6349 /* Pods_VizurySample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78E8BFFFFC3D6494DFCD31D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				847B499ABD952812B9773984 /* Pods-VizurySample.debug.xcconfig */,
+				F548A5063274F225A4D5BFFF /* Pods-VizurySample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04261472276CED1900C221E8 /* Build configuration list for PBXNativeTarget "VizurySample" */;
 			buildPhases = (
+				EC65821491C003B4D612EB17 /* [CP] Check Pods Manifest.lock */,
 				0426145A276CED1800C221E8 /* Sources */,
 				0426145B276CED1800C221E8 /* Frameworks */,
 				0426145C276CED1800C221E8 /* Resources */,
+				E3B8C1680D9532E16B5256AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +135,7 @@
 				TargetAttributes = {
 					0426145D276CED1800C221E8 = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -132,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3B8C1680D9532E16B5256AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VizurySample/Pods-VizurySample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VizurySample/Pods-VizurySample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VizurySample/Pods-VizurySample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC65821491C003B4D612EB17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VizurySample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0426145A276CED1800C221E8 /* Sources */ = {
@@ -284,12 +363,18 @@
 		};
 		04261473276CED1900C221E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847B499ABD952812B9773984 /* Pods-VizurySample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54CH79Y9K8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VizurySample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,14 +382,17 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vgl.mobile.liquidationchannel.VizurySample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgl.mobile.liquidationchannel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VizurySample/VizurySample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,12 +400,18 @@
 		};
 		04261474276CED1900C221E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F548A5063274F225A4D5BFFF /* Pods-VizurySample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54CH79Y9K8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VizurySample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,14 +419,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vgl.mobile.liquidationchannel.VizurySample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vgl.mobile.liquidationchannel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VizurySample/VizurySample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

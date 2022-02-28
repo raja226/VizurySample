@@ -10,10 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        VizuryEventLogger.initializeEventLogger(in: application,
+                                                withPackageId: "382",
+                                                serverURL: "https://sg-pl.vizury.com/analyze/analyze.php",
+                                                withCachingEnabled: false,
+                                                andWithFCMEnabled: true)
+        VizuryEventLogger.enableDebugMode(true)
+        
         return true
     }
 
